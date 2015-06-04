@@ -18,6 +18,7 @@ abstract class BaseForumAnswerForm extends BaseFormDoctrine
       'id'          => new sfWidgetFormInputHidden(),
       'text'        => new sfWidgetFormTextarea(),
       'authorName'  => new sfWidgetFormInputText(),
+      'authorEmail' => new sfWidgetFormInputText(),
       'question_Id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ForumQuestions'), 'add_empty' => false)),
       'created_at'  => new sfWidgetFormDateTime(),
       'updated_at'  => new sfWidgetFormDateTime(),
@@ -26,11 +27,14 @@ abstract class BaseForumAnswerForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'text'        => new sfValidatorString(array('max_length' => 1000)),
-      'authorName'  => new sfValidatorInteger(),
+      'authorName'  => new sfValidatorString(array('max_length' => 50)),
+      'authorEmail' => new sfValidatorString(array('max_length' => 50)),
       'question_Id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ForumQuestions'))),
       'created_at'  => new sfValidatorDateTime(),
       'updated_at'  => new sfValidatorDateTime(),
     ));
+
+    unset($this['created_at'],$this['updated_at']);
 
     $this->widgetSchema->setNameFormat('forum_answer[%s]');
 

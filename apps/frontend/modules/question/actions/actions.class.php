@@ -19,9 +19,10 @@ class questionActions extends sfActions
 
   public function executeShow(sfWebRequest $request)
   {
-  $this->forum_answers = Doctrine_Core::getTable('ForumAnswer')
+   $this->forum_answers = Doctrine_Core::getTable('ForumAnswer')
       ->createQuery('a')
       ->where('question_id=?',$request->getParameter('id'))
+      ->orderBy('created_at desc')
       ->execute();
 
     $this->forum_questions = Doctrine_Core::getTable('ForumQuestions')->find(array($request->getParameter('id')));

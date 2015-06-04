@@ -73,7 +73,7 @@ class answerActions extends sfActions
     {
       $forum_answer = $form->save();
 
-      $this->redirect('answer/edit?id='.$forum_answer->getId());
+      $this->redirect('question/'.$form->getValue('question_Id'));
     }
   }
 }

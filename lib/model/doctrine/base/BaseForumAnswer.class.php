@@ -35,8 +35,9 @@ abstract class BaseForumAnswer extends sfDoctrineRecord
              'length' => 1000,
              ));
         $this->hasColumn('authorName', 'integer', null, array(
-            'type' => 'integer',
+            'type' => 'string',
             'notnull' => true,
+            'length' => 50,
         ));
         $this->hasColumn('authorEmail', 'integer', null, array(
             'type' => 'integer',
