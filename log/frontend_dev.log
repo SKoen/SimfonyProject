@@ -2206,3 +2206,401 @@ Jun 04 17:17:05 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 3.19 
 Jun 04 17:17:05 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.10 ms (1)
 Jun 04 17:17:05 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.26 ms (1)
 Jun 04 17:17:05 symfony [info] {sfWebResponse} Send content (49250 o)
+Jun 04 17:24:25 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 17:24:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:24:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:24:25 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 17:24:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:24:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 17:24:25 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 17:24:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 17:24:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (1)
+Jun 04 17:24:25 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:24:25 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:24:25 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:24:25 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:24:25 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:24:25 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:24:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:24:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:24:25 symfony [info] {sfWebDebugLogger} Configuration 24.71 ms (13)
+Jun 04 17:24:25 symfony [info] {sfWebDebugLogger} Factories 54.42 ms (1)
+Jun 04 17:24:25 symfony [info] {sfWebDebugLogger} Action "question/index" 58.25 ms (1)
+Jun 04 17:24:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.47 ms (4)
+Jun 04 17:24:25 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 127.66 ms (1)
+Jun 04 17:24:25 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.15 ms (1)
+Jun 04 17:24:25 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 3.76 ms (1)
+Jun 04 17:24:25 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.10 ms (1)
+Jun 04 17:24:25 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.83 ms (1)
+Jun 04 17:24:26 symfony [info] {sfWebResponse} Send content (41541 o)
+Jun 04 17:24:30 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 17:24:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:24:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:24:30 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 17:24:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:24:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 17:24:30 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 17:24:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 17:24:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (1)
+Jun 04 17:24:30 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:24:30 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:24:30 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:24:30 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:24:30 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:24:30 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:24:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:24:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:24:30 symfony [info] {sfWebDebugLogger} Configuration 26.53 ms (13)
+Jun 04 17:24:30 symfony [info] {sfWebDebugLogger} Factories 56.09 ms (1)
+Jun 04 17:24:30 symfony [info] {sfWebDebugLogger} Action "question/index" 57.45 ms (1)
+Jun 04 17:24:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.68 ms (4)
+Jun 04 17:24:30 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 133.96 ms (1)
+Jun 04 17:24:30 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.14 ms (1)
+Jun 04 17:24:30 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 3.90 ms (1)
+Jun 04 17:24:30 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.11 ms (1)
+Jun 04 17:24:30 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.80 ms (1)
+Jun 04 17:24:30 symfony [info] {sfWebResponse} Send content (41541 o)
+Jun 04 17:25:30 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 17:25:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:25:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:25:30 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 17:25:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:25:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 17:25:30 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 17:25:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 17:25:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (1)
+Jun 04 17:25:30 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:25:30 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:25:30 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:25:30 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:25:30 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:25:30 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:25:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:25:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:25:30 symfony [info] {sfWebDebugLogger} Configuration 31.22 ms (13)
+Jun 04 17:25:30 symfony [info] {sfWebDebugLogger} Factories 68.04 ms (1)
+Jun 04 17:25:30 symfony [info] {sfWebDebugLogger} Action "question/index" 57.91 ms (1)
+Jun 04 17:25:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.40 ms (4)
+Jun 04 17:25:30 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 139.13 ms (1)
+Jun 04 17:25:30 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.15 ms (1)
+Jun 04 17:25:30 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 7.58 ms (1)
+Jun 04 17:25:30 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.13 ms (1)
+Jun 04 17:25:30 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 5.38 ms (1)
+Jun 04 17:25:30 symfony [info] {sfWebResponse} Send content (41590 o)
+Jun 04 17:25:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:25:32 symfony [info] {sfFrontWebController} Action "user/register" does not exist
+Jun 04 17:25:32 symfony [err] {sfError404Exception} Action "user/register" does not exist.
+Jun 04 17:25:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 04 17:25:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:25:32 symfony [info] {sfWebDebugLogger} Configuration 8.51 ms (5)
+Jun 04 17:25:32 symfony [info] {sfWebDebugLogger} Factories 54.40 ms (1)
+Jun 04 17:25:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:25:45 symfony [info] {sfFrontWebController} Action "user/register" does not exist
+Jun 04 17:25:45 symfony [err] {sfError404Exception} Action "user/register" does not exist.
+Jun 04 17:25:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 04 17:25:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:25:45 symfony [info] {sfWebDebugLogger} Configuration 9.73 ms (5)
+Jun 04 17:25:45 symfony [info] {sfWebDebugLogger} Factories 54.12 ms (1)
+Jun 04 17:25:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 17:25:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:25:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:25:48 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 17:25:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:25:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 17:25:48 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 17:25:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 17:25:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (1)
+Jun 04 17:25:48 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:25:48 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:25:48 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:25:48 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:25:48 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:25:48 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:25:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:25:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:25:48 symfony [info] {sfWebDebugLogger} Configuration 22.58 ms (13)
+Jun 04 17:25:48 symfony [info] {sfWebDebugLogger} Factories 53.62 ms (1)
+Jun 04 17:25:48 symfony [info] {sfWebDebugLogger} Action "question/index" 58.35 ms (1)
+Jun 04 17:25:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.56 ms (4)
+Jun 04 17:25:48 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 135.98 ms (1)
+Jun 04 17:25:48 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.14 ms (1)
+Jun 04 17:25:48 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.69 ms (1)
+Jun 04 17:25:48 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.14 ms (1)
+Jun 04 17:25:48 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 4.02 ms (1)
+Jun 04 17:25:48 symfony [info] {sfWebResponse} Send content (41575 o)
+Jun 04 17:25:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:25:50 symfony [info] {sfFrontWebController} Action "user/register" does not exist
+Jun 04 17:25:50 symfony [err] {sfError404Exception} Action "user/register" does not exist.
+Jun 04 17:25:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 04 17:25:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:25:50 symfony [info] {sfWebDebugLogger} Configuration 8.86 ms (5)
+Jun 04 17:25:50 symfony [info] {sfWebDebugLogger} Factories 54.73 ms (1)
+Jun 04 17:27:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Jun 04 17:27:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:27:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:27:20 symfony [info] {userActions} Call "userActions->executeLogin()"
+Jun 04 17:27:20 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "user/login".
+Jun 04 17:27:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 04 17:27:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:27:20 symfony [info] {sfWebDebugLogger} Configuration 74.70 ms (9)
+Jun 04 17:27:20 symfony [info] {sfWebDebugLogger} Factories 56.86 ms (1)
+Jun 04 17:27:20 symfony [info] {sfWebDebugLogger} Action "user/login" 108.56 ms (1)
+Jun 04 17:28:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Jun 04 17:30:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Jun 04 17:30:26 symfony [info] {sfFrontWebController} Action "user/login" does not exist
+Jun 04 17:30:26 symfony [err] {sfError404Exception} Action "user/login" does not exist.
+Jun 04 17:30:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 04 17:30:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:30:26 symfony [info] {sfWebDebugLogger} Configuration 8.00 ms (5)
+Jun 04 17:30:26 symfony [info] {sfWebDebugLogger} Factories 52.96 ms (1)
+Jun 04 17:31:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:31:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:31:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:31:55 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:31:55 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "user/register".
+Jun 04 17:31:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 04 17:31:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:31:55 symfony [info] {sfWebDebugLogger} Configuration 14.71 ms (8)
+Jun 04 17:31:55 symfony [info] {sfWebDebugLogger} Factories 57.01 ms (1)
+Jun 04 17:31:55 symfony [info] {sfWebDebugLogger} Action "user/register" 109.54 ms (1)
+Jun 04 17:32:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:32:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:32:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:32:26 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:32:26 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "user/register".
+Jun 04 17:32:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 04 17:32:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:32:26 symfony [info] {sfWebDebugLogger} Configuration 13.14 ms (8)
+Jun 04 17:32:26 symfony [info] {sfWebDebugLogger} Factories 53.77 ms (1)
+Jun 04 17:32:26 symfony [info] {sfWebDebugLogger} Action "user/register" 109.49 ms (1)
+Jun 04 17:32:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:32:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:32:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:32:52 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:32:52 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "user/register".
+Jun 04 17:32:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 04 17:32:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:32:52 symfony [info] {sfWebDebugLogger} Configuration 17.55 ms (8)
+Jun 04 17:32:52 symfony [info] {sfWebDebugLogger} Factories 55.99 ms (1)
+Jun 04 17:32:52 symfony [info] {sfWebDebugLogger} Action "user/register" 110.42 ms (1)
+Jun 04 17:34:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:34:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:34:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:34:41 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:34:41 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "user/register".
+Jun 04 17:34:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 04 17:34:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:34:41 symfony [info] {sfWebDebugLogger} Configuration 771.25 ms (8)
+Jun 04 17:34:41 symfony [info] {sfWebDebugLogger} Factories 535.71 ms (1)
+Jun 04 17:34:41 symfony [info] {sfWebDebugLogger} Action "user/register" 106.19 ms (1)
+Jun 04 17:35:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:35:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:35:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:35:51 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:35:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:35:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.username = ?) - ()
+Jun 04 17:35:51 symfony [info] {userActions} Change template to "CURRENT/new"
+Jun 04 17:35:51 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/user/templates/newSuccess.php"
+Jun 04 17:35:51 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/user/templates/_form.php"
+Jun 04 17:35:51 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:35:51 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:35:51 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:35:51 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:35:51 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:35:51 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:35:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:35:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} Configuration 67.31 ms (14)
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} Factories 52.75 ms (1)
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} Action "user/register" 110.72 ms (1)
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.26 ms (2)
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} View "Success" for "user/register" 310.54 ms (1)
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} Partial "user/_form" 199.58 ms (1)
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.11 ms (1)
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.44 ms (1)
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.11 ms (1)
+Jun 04 17:35:51 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.28 ms (1)
+Jun 04 17:35:52 symfony [info] {sfWebResponse} Send content (54290 o)
+Jun 04 17:36:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:36:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:36:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:36:59 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:36:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:36:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.username = ?) - ()
+Jun 04 17:36:59 symfony [info] {userActions} Change template to "CURRENT/register"
+Jun 04 17:36:59 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/user/templates/registerSuccess.php"
+Jun 04 17:36:59 symfony [notice] {sfWebDebugLogger}  Notice at D:\Webest\forumProject\trunk\apps\frontend\modules\user\templates\registerSuccess.php on line 2 (Use of undefined constant ffasfasf - assumed 'ffasfasf')
+Jun 04 17:36:59 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:36:59 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:36:59 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:36:59 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:36:59 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:36:59 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:36:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:36:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:36:59 symfony [info] {sfWebDebugLogger} Configuration 24.23 ms (13)
+Jun 04 17:36:59 symfony [info] {sfWebDebugLogger} Factories 60.36 ms (1)
+Jun 04 17:36:59 symfony [info] {sfWebDebugLogger} Action "user/register" 107.21 ms (1)
+Jun 04 17:36:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.15 ms (2)
+Jun 04 17:36:59 symfony [info] {sfWebDebugLogger} View "Success" for "user/register" 65.28 ms (1)
+Jun 04 17:36:59 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.10 ms (1)
+Jun 04 17:36:59 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.45 ms (1)
+Jun 04 17:36:59 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.11 ms (1)
+Jun 04 17:36:59 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.57 ms (1)
+Jun 04 17:37:00 symfony [info] {sfWebResponse} Send content (45512 o)
+Jun 04 17:38:23 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:38:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:38:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:38:23 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:38:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:38:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.username = ?) - ()
+Jun 04 17:38:23 symfony [info] {userActions} Change template to "CURRENT/register"
+Jun 04 17:38:23 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/user/templates/registerSuccess.php"
+Jun 04 17:38:23 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:38:23 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:38:23 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:38:23 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:38:23 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:38:23 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:38:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:38:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:38:23 symfony [info] {sfWebDebugLogger} Configuration 22.44 ms (13)
+Jun 04 17:38:23 symfony [info] {sfWebDebugLogger} Factories 53.30 ms (1)
+Jun 04 17:38:23 symfony [info] {sfWebDebugLogger} Action "user/register" 114.51 ms (1)
+Jun 04 17:38:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.19 ms (2)
+Jun 04 17:38:23 symfony [info] {sfWebDebugLogger} View "Success" for "user/register" 57.49 ms (1)
+Jun 04 17:38:23 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.10 ms (1)
+Jun 04 17:38:23 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 5.77 ms (1)
+Jun 04 17:38:23 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.10 ms (1)
+Jun 04 17:38:23 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.48 ms (1)
+Jun 04 17:38:23 symfony [info] {sfWebResponse} Send content (40058 o)
+Jun 04 17:38:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:38:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:38:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:38:55 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:38:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:38:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.username = ?) - ()
+Jun 04 17:38:55 symfony [info] {userActions} Change template to "CURRENT/register"
+Jun 04 17:38:55 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/user/templates/registerSuccess.php"
+Jun 04 17:38:55 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:38:55 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:38:55 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:38:55 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:38:55 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:38:55 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:38:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:38:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:38:55 symfony [info] {sfWebDebugLogger} Configuration 21.59 ms (13)
+Jun 04 17:38:55 symfony [info] {sfWebDebugLogger} Factories 53.13 ms (1)
+Jun 04 17:38:55 symfony [info] {sfWebDebugLogger} Action "user/register" 100.98 ms (1)
+Jun 04 17:38:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.37 ms (2)
+Jun 04 17:38:55 symfony [info] {sfWebDebugLogger} View "Success" for "user/register" 57.93 ms (1)
+Jun 04 17:38:55 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.10 ms (1)
+Jun 04 17:38:55 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 7.22 ms (1)
+Jun 04 17:38:55 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.11 ms (1)
+Jun 04 17:38:55 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.93 ms (1)
+Jun 04 17:38:55 symfony [info] {sfWebResponse} Send content (41339 o)
+Jun 04 17:40:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:40:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:40:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:40:51 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:40:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:40:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.username = ?) - ()
+Jun 04 17:40:51 symfony [info] {userActions} Change template to "CURRENT/register"
+Jun 04 17:40:52 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/user/templates/registerSuccess.php"
+Jun 04 17:40:52 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:40:52 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:40:52 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:40:52 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:40:52 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:40:52 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:40:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:40:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:40:52 symfony [info] {sfWebDebugLogger} Configuration 21.58 ms (13)
+Jun 04 17:40:52 symfony [info] {sfWebDebugLogger} Factories 55.15 ms (1)
+Jun 04 17:40:52 symfony [info] {sfWebDebugLogger} Action "user/register" 101.09 ms (1)
+Jun 04 17:40:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.29 ms (2)
+Jun 04 17:40:52 symfony [info] {sfWebDebugLogger} View "Success" for "user/register" 58.15 ms (1)
+Jun 04 17:40:52 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.13 ms (1)
+Jun 04 17:40:52 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 7.27 ms (1)
+Jun 04 17:40:52 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.11 ms (1)
+Jun 04 17:40:52 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 4.08 ms (1)
+Jun 04 17:40:52 symfony [info] {sfWebResponse} Send content (41338 o)
+Jun 04 17:40:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Jun 04 17:40:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:40:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:40:54 symfony [info] {userActions} Call "userActions->executeLogin()"
+Jun 04 17:40:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:40:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.username = ?) - ()
+Jun 04 17:40:54 symfony [info] {userActions} Change template to "CURRENT/login"
+Jun 04 17:40:54 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/user/templates/loginSuccess.php"
+Jun 04 17:40:54 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:40:54 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:40:54 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:40:54 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:40:54 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:40:54 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:40:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:40:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:40:54 symfony [info] {sfWebDebugLogger} Configuration 19.93 ms (13)
+Jun 04 17:40:54 symfony [info] {sfWebDebugLogger} Factories 53.07 ms (1)
+Jun 04 17:40:54 symfony [info] {sfWebDebugLogger} Action "user/login" 101.71 ms (1)
+Jun 04 17:40:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.06 ms (2)
+Jun 04 17:40:54 symfony [info] {sfWebDebugLogger} View "Success" for "user/login" 57.01 ms (1)
+Jun 04 17:40:54 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.11 ms (1)
+Jun 04 17:40:54 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 5.78 ms (1)
+Jun 04 17:40:54 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.11 ms (1)
+Jun 04 17:40:54 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.47 ms (1)
+Jun 04 17:40:54 symfony [info] {sfWebResponse} Send content (40058 o)
+Jun 04 17:41:20 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/login with parameters array (  'module' => 'user',  'action' => 'login',)
+Jun 04 17:41:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:41:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:41:20 symfony [info] {userActions} Call "userActions->executeLogin()"
+Jun 04 17:41:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:41:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.username = ?) - ()
+Jun 04 17:41:20 symfony [info] {userActions} Change template to "CURRENT/login"
+Jun 04 17:41:20 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/user/templates/loginSuccess.php"
+Jun 04 17:41:20 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:41:20 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:41:20 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:41:20 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:41:20 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:41:20 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:41:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:41:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:41:20 symfony [info] {sfWebDebugLogger} Configuration 20.27 ms (13)
+Jun 04 17:41:20 symfony [info] {sfWebDebugLogger} Factories 53.02 ms (1)
+Jun 04 17:41:20 symfony [info] {sfWebDebugLogger} Action "user/login" 102.64 ms (1)
+Jun 04 17:41:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.14 ms (2)
+Jun 04 17:41:20 symfony [info] {sfWebDebugLogger} View "Success" for "user/login" 55.01 ms (1)
+Jun 04 17:41:20 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.11 ms (1)
+Jun 04 17:41:20 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.23 ms (1)
+Jun 04 17:41:20 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.11 ms (1)
+Jun 04 17:41:20 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.41 ms (1)
+Jun 04 17:41:20 symfony [info] {sfWebResponse} Send content (41077 o)
+Jun 04 17:41:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/register with parameters array (  'module' => 'user',  'action' => 'register',)
+Jun 04 17:41:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 17:41:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 17:41:26 symfony [info] {userActions} Call "userActions->executeRegister()"
+Jun 04 17:41:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 17:41:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.username = ?) - ()
+Jun 04 17:41:26 symfony [info] {userActions} Change template to "CURRENT/register"
+Jun 04 17:41:26 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/user/templates/registerSuccess.php"
+Jun 04 17:41:26 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:41:26 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 17:41:26 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 17:41:26 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 17:41:26 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 17:41:26 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 17:41:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 17:41:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 17:41:26 symfony [info] {sfWebDebugLogger} Configuration 22.64 ms (13)
+Jun 04 17:41:26 symfony [info] {sfWebDebugLogger} Factories 53.28 ms (1)
+Jun 04 17:41:26 symfony [info] {sfWebDebugLogger} Action "user/register" 109.39 ms (1)
+Jun 04 17:41:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.14 ms (2)
+Jun 04 17:41:26 symfony [info] {sfWebDebugLogger} View "Success" for "user/register" 57.88 ms (1)
+Jun 04 17:41:26 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.10 ms (1)
+Jun 04 17:41:26 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.19 ms (1)
+Jun 04 17:41:26 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.13 ms (1)
+Jun 04 17:41:26 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.43 ms (1)
+Jun 04 17:41:26 symfony [info] {sfWebResponse} Send content (41385 o)

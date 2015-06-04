@@ -39,6 +39,15 @@ class userActions extends sfActions
     $this->setTemplate('new');
   }
 
+  public function executeRegister(sfWebRequest $request)
+  {
+    $this->setTemplate('register');
+  }
+ public function executeLogin(sfWebRequest $request)
+  {
+    $this->setTemplate('login');
+  }
+
   public function executeEdit(sfWebRequest $request)
   {
     $this->forward404Unless($forum_users = Doctrine_Core::getTable('ForumUsers')->find(array($request->getParameter('id'))), sprintf('Object forum_users does not exist (%s).', $request->getParameter('id')));

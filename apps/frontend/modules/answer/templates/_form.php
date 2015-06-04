@@ -2,7 +2,7 @@
 <?php use_javascripts_for_form($form) ?>
 
 <div class="col-lg-12 answer" id="postanswer" style="display: none">
-<form action="<?php echo url_for('answer/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id='.$form->getObject()->getId() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
+<form class="form-horizontal" action="<?php echo url_for('answer/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id='.$form->getObject()->getId() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
 
     <?php echo $form->renderHiddenFields() ?>
     <?php echo $form->renderGlobalErrors() ?>
@@ -12,11 +12,7 @@
         <div class="form-group">
             <label for="name" class="col-lg-2 control-label" >Name</label>
             <div class="col-lg-10">
-                <?php if(isset($_SESSION['username'])){ ?>
-                    <input type="text" name="authorName" disabled="" class="form-control" placeholder=<?=$_SESSION['username']?>>
-                <?php } else { ?>
-                    <input type="text" name="forum_answer[authorName]" class="form-control" placeholder="Name">
-                <?php } ?>
+                <input type="text" name="forum_answer[authorName]" class="form-control" placeholder="Name">
             </div>
         </div>
         <div class="form-group">

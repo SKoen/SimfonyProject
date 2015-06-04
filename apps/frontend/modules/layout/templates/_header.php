@@ -7,8 +7,8 @@
         </ul>
         <?php //if($this->getAttribute($this->getUser()->IsAuthenticated())): ?>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/accounts/login">Login</a></li>
-                <li><a href="/accounts/register">Register</a></li>
+                <li><a href="<?php echo url_for('user/login')?>">Login</a></li>
+                <li><a href="<?php echo url_for('user/register')?>">Register</a></li>
             </ul>
         <?php// endif; ?>
 
