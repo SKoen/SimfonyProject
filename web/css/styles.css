@@ -1,0 +1,28 @@
+body>header {
+    background: #eee;
+    padding: 5px;
+}
+
+body>header ul, body>header ul>li  {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img {
+    width: 150px;
+}
+
+
+body>footer {
+    background: #392E2E;
+    padding: 5px;
+    text-align: center;
+    color:white;
+}
+
+.homeInfo{
+    text-align: center;
+}
+.middleText{
+    font-size: medium;
+}

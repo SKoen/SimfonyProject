@@ -12,5 +12,4 @@
  */
 class ForumAnswer extends BaseForumAnswer
 {
-
 }

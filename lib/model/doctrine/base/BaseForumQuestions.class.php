@@ -56,6 +56,10 @@ abstract class BaseForumQuestions extends sfDoctrineRecord
              'notnull' => true,
              'length' => 50,
              ));
+        $this->hasColumn('numViews', 'integer', array(
+            'type' => 'integer',
+            'notnull' => true,
+        ));
 
         $this->option('charset', 'utf8');
         $this->option('collate', 'utf8_unicode_ci');

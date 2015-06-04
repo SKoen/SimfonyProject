@@ -88,3 +88,857 @@ Jun 03 16:55:58 symfony [info] {sfWebDebugLogger} Action "answer/index" 51.37 ms
 Jun 03 16:55:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.90 ms (2)
 Jun 03 16:55:58 symfony [info] {sfWebDebugLogger} View "Success" for "answer/index" 44.07 ms (1)
 Jun 03 16:55:58 symfony [info] {sfWebResponse} Send content (32921 o)
+Jun 04 13:49:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 13:49:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 13:49:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 13:49:19 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 13:49:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 13:49:19 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.title = ?) - (dd)
+Jun 04 13:49:19 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 13:49:19 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 13:49:19 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 13:49:20 symfony [err] {sfConfigurationException} The component does not exist: "question", "header".
+Jun 04 13:49:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 13:49:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 13:49:20 symfony [info] {sfWebDebugLogger} Configuration 1714.15 ms (10)
+Jun 04 13:49:20 symfony [info] {sfWebDebugLogger} Factories 1313.84 ms (1)
+Jun 04 13:49:20 symfony [info] {sfWebDebugLogger} Action "question/index" 259.47 ms (1)
+Jun 04 13:49:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.89 ms (2)
+Jun 04 13:49:20 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 735.49 ms (1)
+Jun 04 13:55:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 13:55:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 13:55:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 13:55:29 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 13:55:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 13:55:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 13:55:29 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 13:55:29 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 13:55:29 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 13:55:29 symfony [info] {main} Call "question->executeHeader()"
+Jun 04 13:55:29 symfony [err] {sfRenderException} The template "_header.php" does not exist or is unreadable in "".
+Jun 04 13:55:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 13:55:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 13:55:29 symfony [info] {sfWebDebugLogger} Configuration 1371.02 ms (11)
+Jun 04 13:55:29 symfony [info] {sfWebDebugLogger} Factories 1017.27 ms (1)
+Jun 04 13:55:29 symfony [info] {sfWebDebugLogger} Action "question/index" 109.74 ms (1)
+Jun 04 13:55:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.03 ms (2)
+Jun 04 13:55:29 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 398.59 ms (1)
+Jun 04 13:55:29 symfony [info] {sfWebDebugLogger} Component "question/header" 0.32 ms (1)
+Jun 04 13:55:29 symfony [info] {sfWebDebugLogger} Partial "question/_header" 248.74 ms (1)
+Jun 04 13:58:00 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 13:58:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 13:58:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 13:58:00 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 13:58:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 13:58:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 13:58:01 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 13:58:01 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 13:58:01 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 13:58:01 symfony [info] {main} Call "question->executeHeader()"
+Jun 04 13:58:01 symfony [err] {sfRenderException} The template "_header.php" does not exist or is unreadable in "".
+Jun 04 13:58:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 13:58:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 13:58:01 symfony [info] {sfWebDebugLogger} Configuration 44.14 ms (11)
+Jun 04 13:58:01 symfony [info] {sfWebDebugLogger} Factories 106.94 ms (1)
+Jun 04 13:58:01 symfony [info] {sfWebDebugLogger} Action "question/index" 150.87 ms (1)
+Jun 04 13:58:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.86 ms (2)
+Jun 04 13:58:01 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 441.58 ms (1)
+Jun 04 13:58:01 symfony [info] {sfWebDebugLogger} Component "question/header" 0.25 ms (1)
+Jun 04 13:58:01 symfony [info] {sfWebDebugLogger} Partial "question/_header" 241.80 ms (1)
+Jun 04 14:00:28 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:00:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:00:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:00:28 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:00:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:00:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:00:28 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:00:28 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:00:29 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:00:29 symfony [err] {sfConfigurationException} The component does not exist: "layout", "header".
+Jun 04 14:00:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 14:00:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:00:29 symfony [info] {sfWebDebugLogger} Configuration 98.76 ms (11)
+Jun 04 14:00:29 symfony [info] {sfWebDebugLogger} Factories 202.59 ms (1)
+Jun 04 14:00:29 symfony [info] {sfWebDebugLogger} Action "question/index" 146.37 ms (1)
+Jun 04 14:00:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.95 ms (2)
+Jun 04 14:00:29 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 398.01 ms (1)
+Jun 04 14:00:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:00:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:00:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:00:55 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:00:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:00:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:00:56 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:00:56 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:00:56 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:00:56 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:00:56 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:00:56 symfony [notice] {sfWebDebugLogger}  Notice at D:\Webest\forumProject\trunk\apps\frontend\modules\layout\templates\_header.php on line 8 (Undefined property: sfPartialView::$isLoggedIn)
+Jun 04 14:00:56 symfony [notice] {sfWebDebugLogger}  Notice at D:\Webest\forumProject\trunk\apps\frontend\modules\layout\templates\_header.php on line 15 (Undefined property: sfPartialView::$isLoggedIn)
+Jun 04 14:00:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:00:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:00:56 symfony [info] {sfWebDebugLogger} Configuration 51.85 ms (11)
+Jun 04 14:00:56 symfony [info] {sfWebDebugLogger} Factories 206.89 ms (1)
+Jun 04 14:00:56 symfony [info] {sfWebDebugLogger} Action "question/index" 124.40 ms (1)
+Jun 04 14:00:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.31 ms (2)
+Jun 04 14:00:56 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 149.72 ms (1)
+Jun 04 14:00:56 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.20 ms (1)
+Jun 04 14:00:56 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 40.28 ms (1)
+Jun 04 14:00:56 symfony [info] {sfWebResponse} Send content (51671 o)
+Jun 04 14:17:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:17:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:17:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:17:11 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:17:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:17:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:17:12 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:17:12 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:17:12 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:17:12 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:17:12 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:17:37 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:17:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:17:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:17:37 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:17:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:17:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:17:38 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:17:38 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:17:38 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:17:38 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:17:38 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:17:38 symfony [err] {sfException} Call to undefined method sfPartialView::getUser.
+Jun 04 14:17:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 14:17:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:17:38 symfony [info] {sfWebDebugLogger} Configuration 39.13 ms (11)
+Jun 04 14:17:38 symfony [info] {sfWebDebugLogger} Factories 113.83 ms (1)
+Jun 04 14:17:38 symfony [info] {sfWebDebugLogger} Action "question/index" 103.90 ms (1)
+Jun 04 14:17:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.74 ms (2)
+Jun 04 14:17:38 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 363.09 ms (1)
+Jun 04 14:17:38 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.20 ms (1)
+Jun 04 14:17:38 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 252.33 ms (1)
+Jun 04 14:18:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:18:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:18:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:18:46 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:18:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:18:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:18:47 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:18:47 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:18:47 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:18:47 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:18:47 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:18:47 symfony [notice] {sfWebDebugLogger}  Notice at D:\Webest\forumProject\trunk\apps\frontend\modules\layout\templates\_header.php on line 18 (Undefined index: username)
+Jun 04 14:18:47 symfony [notice] {sfWebDebugLogger}  Notice at D:\Webest\forumProject\trunk\apps\frontend\modules\layout\templates\_header.php on line 19 (Undefined index: username)
+Jun 04 14:18:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:18:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:18:47 symfony [info] {sfWebDebugLogger} Configuration 39.48 ms (11)
+Jun 04 14:18:47 symfony [info] {sfWebDebugLogger} Factories 97.88 ms (1)
+Jun 04 14:18:47 symfony [info] {sfWebDebugLogger} Action "question/index" 113.93 ms (1)
+Jun 04 14:18:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.90 ms (2)
+Jun 04 14:18:47 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 209.58 ms (1)
+Jun 04 14:18:47 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.43 ms (1)
+Jun 04 14:18:47 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 48.49 ms (1)
+Jun 04 14:18:47 symfony [info] {sfWebResponse} Send content (51994 o)
+Jun 04 14:19:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:19:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:19:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:19:58 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:19:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:19:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:19:59 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:19:59 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:19:59 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:19:59 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:19:59 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:19:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:19:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:19:59 symfony [info] {sfWebDebugLogger} Configuration 39.66 ms (11)
+Jun 04 14:19:59 symfony [info] {sfWebDebugLogger} Factories 125.33 ms (1)
+Jun 04 14:19:59 symfony [info] {sfWebDebugLogger} Action "question/index" 134.43 ms (1)
+Jun 04 14:19:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.94 ms (2)
+Jun 04 14:19:59 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 114.92 ms (1)
+Jun 04 14:19:59 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.23 ms (1)
+Jun 04 14:19:59 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.63 ms (1)
+Jun 04 14:19:59 symfony [info] {sfWebResponse} Send content (36992 o)
+Jun 04 14:23:52 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:23:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:23:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:23:53 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:23:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:23:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:23:53 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:23:53 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:23:53 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:23:53 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:23:53 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:23:53 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:23:53 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:23:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:23:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:23:53 symfony [info] {sfWebDebugLogger} Configuration 61.82 ms (13)
+Jun 04 14:23:53 symfony [info] {sfWebDebugLogger} Factories 141.30 ms (1)
+Jun 04 14:23:53 symfony [info] {sfWebDebugLogger} Action "question/index" 159.78 ms (1)
+Jun 04 14:23:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.64 ms (2)
+Jun 04 14:23:53 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 236.35 ms (1)
+Jun 04 14:23:53 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.41 ms (1)
+Jun 04 14:23:53 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 14.45 ms (1)
+Jun 04 14:23:53 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.44 ms (1)
+Jun 04 14:23:53 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 14.39 ms (1)
+Jun 04 14:23:53 symfony [info] {sfWebResponse} Send content (38690 o)
+Jun 04 14:25:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:25:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:25:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:25:56 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:25:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:25:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:25:56 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:25:56 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:25:56 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:25:56 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:25:56 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:25:57 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:25:57 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:25:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:25:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:25:57 symfony [info] {sfWebDebugLogger} Configuration 49.93 ms (13)
+Jun 04 14:25:57 symfony [info] {sfWebDebugLogger} Factories 98.76 ms (1)
+Jun 04 14:25:57 symfony [info] {sfWebDebugLogger} Action "question/index" 146.43 ms (1)
+Jun 04 14:25:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.76 ms (2)
+Jun 04 14:25:57 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 230.73 ms (1)
+Jun 04 14:25:57 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.20 ms (1)
+Jun 04 14:25:57 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.78 ms (1)
+Jun 04 14:25:57 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.20 ms (1)
+Jun 04 14:25:57 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 7.60 ms (1)
+Jun 04 14:25:57 symfony [info] {sfWebResponse} Send content (38682 o)
+Jun 04 14:26:02 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:26:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:26:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:26:02 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:26:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:26:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:26:02 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:26:02 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:26:02 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:26:02 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:26:02 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:26:02 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:26:02 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:26:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:26:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:26:02 symfony [info] {sfWebDebugLogger} Configuration 42.91 ms (13)
+Jun 04 14:26:02 symfony [info] {sfWebDebugLogger} Factories 104.42 ms (1)
+Jun 04 14:26:02 symfony [info] {sfWebDebugLogger} Action "question/index" 108.82 ms (1)
+Jun 04 14:26:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.42 ms (2)
+Jun 04 14:26:02 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 144.35 ms (1)
+Jun 04 14:26:02 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.20 ms (1)
+Jun 04 14:26:02 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.84 ms (1)
+Jun 04 14:26:02 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.20 ms (1)
+Jun 04 14:26:02 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 7.89 ms (1)
+Jun 04 14:26:02 symfony [info] {sfWebResponse} Send content (38629 o)
+Jun 04 14:30:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:30:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:30:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:30:05 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:30:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:30:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:30:05 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:30:05 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:30:05 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:30:05 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:30:05 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:30:05 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:30:05 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:30:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:30:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:30:05 symfony [info] {sfWebDebugLogger} Configuration 54.97 ms (13)
+Jun 04 14:30:05 symfony [info] {sfWebDebugLogger} Factories 98.08 ms (1)
+Jun 04 14:30:05 symfony [info] {sfWebDebugLogger} Action "question/index" 124.18 ms (1)
+Jun 04 14:30:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.32 ms (2)
+Jun 04 14:30:05 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 301.20 ms (1)
+Jun 04 14:30:05 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.40 ms (1)
+Jun 04 14:30:05 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 13.57 ms (1)
+Jun 04 14:30:05 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.39 ms (1)
+Jun 04 14:30:05 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 15.02 ms (1)
+Jun 04 14:30:06 symfony [info] {sfWebResponse} Send content (38675 o)
+Jun 04 14:32:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:32:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:32:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:32:53 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:32:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:32:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:32:53 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:32:53 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:32:53 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:32:53 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:32:53 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:32:53 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:32:53 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:32:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:32:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:32:53 symfony [info] {sfWebDebugLogger} Configuration 72.96 ms (13)
+Jun 04 14:32:53 symfony [info] {sfWebDebugLogger} Factories 107.34 ms (1)
+Jun 04 14:32:53 symfony [info] {sfWebDebugLogger} Action "question/index" 122.74 ms (1)
+Jun 04 14:32:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.62 ms (2)
+Jun 04 14:32:53 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 135.00 ms (1)
+Jun 04 14:32:53 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.35 ms (1)
+Jun 04 14:32:53 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.95 ms (1)
+Jun 04 14:32:53 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.23 ms (1)
+Jun 04 14:32:53 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 7.62 ms (1)
+Jun 04 14:32:54 symfony [info] {sfWebResponse} Send content (38560 o)
+Jun 04 14:36:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:36:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:36:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:36:10 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:36:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:36:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:36:10 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:36:10 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:36:10 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:36:10 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:36:10 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:36:10 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:36:10 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:36:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:36:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:36:10 symfony [info] {sfWebDebugLogger} Configuration 55.54 ms (13)
+Jun 04 14:36:10 symfony [info] {sfWebDebugLogger} Factories 103.10 ms (1)
+Jun 04 14:36:10 symfony [info] {sfWebDebugLogger} Action "question/index" 140.56 ms (1)
+Jun 04 14:36:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.88 ms (2)
+Jun 04 14:36:10 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 150.11 ms (1)
+Jun 04 14:36:10 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.21 ms (1)
+Jun 04 14:36:10 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 7.11 ms (1)
+Jun 04 14:36:10 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.20 ms (1)
+Jun 04 14:36:10 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 6.90 ms (1)
+Jun 04 14:36:10 symfony [info] {sfWebResponse} Send content (38560 o)
+Jun 04 14:36:30 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:36:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:36:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:36:30 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:36:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:36:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:36:30 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:36:30 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:36:30 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:36:30 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:36:30 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:36:30 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:36:30 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:36:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:36:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:36:30 symfony [info] {sfWebDebugLogger} Configuration 1683.46 ms (13)
+Jun 04 14:36:30 symfony [info] {sfWebDebugLogger} Factories 1153.00 ms (1)
+Jun 04 14:36:30 symfony [info] {sfWebDebugLogger} Action "question/index" 104.23 ms (1)
+Jun 04 14:36:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.99 ms (2)
+Jun 04 14:36:30 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 186.02 ms (1)
+Jun 04 14:36:30 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.21 ms (1)
+Jun 04 14:36:30 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 7.04 ms (1)
+Jun 04 14:36:30 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.20 ms (1)
+Jun 04 14:36:30 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 6.06 ms (1)
+Jun 04 14:36:31 symfony [info] {sfWebResponse} Send content (38563 o)
+Jun 04 14:36:52 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:36:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:36:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:36:52 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:36:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:36:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:36:52 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:36:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (1)
+Jun 04 14:36:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (2)
+Jun 04 14:36:52 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:36:52 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:36:52 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:36:52 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:36:52 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:36:52 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:36:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:36:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:36:52 symfony [info] {sfWebDebugLogger} Configuration 39.48 ms (13)
+Jun 04 14:36:52 symfony [info] {sfWebDebugLogger} Factories 167.52 ms (1)
+Jun 04 14:36:52 symfony [info] {sfWebDebugLogger} Action "question/index" 132.21 ms (1)
+Jun 04 14:36:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 55.04 ms (4)
+Jun 04 14:36:52 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 344.62 ms (1)
+Jun 04 14:36:52 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.20 ms (1)
+Jun 04 14:36:52 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.24 ms (1)
+Jun 04 14:36:52 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.20 ms (1)
+Jun 04 14:36:52 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 6.73 ms (1)
+Jun 04 14:36:52 symfony [info] {sfWebResponse} Send content (41499 o)
+Jun 04 14:37:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:37:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:37:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:37:24 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:37:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:37:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:37:24 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:37:24 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "author_name" on "ForumQuestions"
+Jun 04 14:37:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 14:37:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:37:24 symfony [info] {sfWebDebugLogger} Configuration 32.32 ms (9)
+Jun 04 14:37:24 symfony [info] {sfWebDebugLogger} Factories 105.09 ms (1)
+Jun 04 14:37:24 symfony [info] {sfWebDebugLogger} Action "question/index" 127.86 ms (1)
+Jun 04 14:37:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.72 ms (2)
+Jun 04 14:37:24 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 500.84 ms (1)
+Jun 04 14:38:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:38:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:38:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:38:11 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:38:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:38:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:38:11 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:38:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 14:38:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (1)
+Jun 04 14:38:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 14:38:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (2)
+Jun 04 14:38:11 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:38:12 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:38:12 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:38:12 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:38:12 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:38:12 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:38:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:38:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:38:12 symfony [info] {sfWebDebugLogger} Configuration 57.44 ms (13)
+Jun 04 14:38:12 symfony [info] {sfWebDebugLogger} Factories 157.60 ms (1)
+Jun 04 14:38:12 symfony [info] {sfWebDebugLogger} Action "question/index" 132.40 ms (1)
+Jun 04 14:38:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 54.66 ms (6)
+Jun 04 14:38:12 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 485.06 ms (1)
+Jun 04 14:38:12 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.25 ms (1)
+Jun 04 14:38:12 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 8.47 ms (1)
+Jun 04 14:38:12 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.27 ms (1)
+Jun 04 14:38:12 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 8.14 ms (1)
+Jun 04 14:38:12 symfony [info] {sfWebResponse} Send content (44583 o)
+Jun 04 14:38:37 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 14:38:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 14:38:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 14:38:37 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 14:38:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 14:38:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 14:38:37 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 14:38:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 14:38:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (1)
+Jun 04 14:38:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 14:38:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (2)
+Jun 04 14:38:38 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:38:38 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 14:38:38 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 14:38:38 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 14:38:38 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 14:38:38 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 14:38:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 14:38:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 14:38:38 symfony [info] {sfWebDebugLogger} Configuration 65.38 ms (13)
+Jun 04 14:38:38 symfony [info] {sfWebDebugLogger} Factories 188.71 ms (1)
+Jun 04 14:38:38 symfony [info] {sfWebDebugLogger} Action "question/index" 144.64 ms (1)
+Jun 04 14:38:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 7.13 ms (6)
+Jun 04 14:38:38 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 342.83 ms (1)
+Jun 04 14:38:38 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.20 ms (1)
+Jun 04 14:38:38 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 7.93 ms (1)
+Jun 04 14:38:38 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.20 ms (1)
+Jun 04 14:38:38 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 6.78 ms (1)
+Jun 04 14:38:38 symfony [info] {sfWebResponse} Send content (44581 o)
+Jun 04 15:14:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 15:14:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:14:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:14:05 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 15:14:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:14:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 15:14:05 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 15:14:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:14:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (1)
+Jun 04 15:14:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:14:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (2)
+Jun 04 15:14:06 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:14:06 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:14:06 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:14:06 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:14:06 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:14:06 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:14:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:14:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:14:06 symfony [info] {sfWebDebugLogger} Configuration 45.43 ms (13)
+Jun 04 15:14:06 symfony [info] {sfWebDebugLogger} Factories 101.74 ms (1)
+Jun 04 15:14:06 symfony [info] {sfWebDebugLogger} Action "question/index" 108.66 ms (1)
+Jun 04 15:14:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 6.65 ms (6)
+Jun 04 15:14:06 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 326.07 ms (1)
+Jun 04 15:14:06 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.20 ms (1)
+Jun 04 15:14:06 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.82 ms (1)
+Jun 04 15:14:06 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.20 ms (1)
+Jun 04 15:14:06 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 6.27 ms (1)
+Jun 04 15:14:06 symfony [info] {sfWebResponse} Send content (44688 o)
+Jun 04 15:14:10 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:14:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:14:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:14:10 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:14:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:14:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:14:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:14:11 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:14:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:14:11 symfony [notice] {sfWebDebugLogger}  Notice at D:\Webest\forumProject\trunk\apps\frontend\modules\question\templates\showSuccess.php on line 17 (Undefined property: sfPHPView::$forum_answers)
+Jun 04 15:14:11 symfony [warning] {sfWebDebugLogger}  Warning at D:\Webest\forumProject\trunk\apps\frontend\modules\question\templates\showSuccess.php on line 17 (Invalid argument supplied for foreach())
+Jun 04 15:14:11 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:14:11 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:14:11 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:14:11 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:14:11 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:14:11 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:14:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:14:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:14:11 symfony [info] {sfWebDebugLogger} Configuration 45.96 ms (13)
+Jun 04 15:14:11 symfony [info] {sfWebDebugLogger} Factories 99.35 ms (1)
+Jun 04 15:14:11 symfony [info] {sfWebDebugLogger} Action "question/show" 177.23 ms (1)
+Jun 04 15:14:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.33 ms (4)
+Jun 04 15:14:11 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 232.14 ms (1)
+Jun 04 15:14:11 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.22 ms (1)
+Jun 04 15:14:11 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 6.32 ms (1)
+Jun 04 15:14:11 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.20 ms (1)
+Jun 04 15:14:11 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 7.00 ms (1)
+Jun 04 15:14:11 symfony [info] {sfWebResponse} Send content (53388 o)
+Jun 04 15:14:53 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:14:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:14:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:14:53 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:14:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:14:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:14:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:14:54 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:14:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:14:54 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "ForumUsers" on "ForumAnswer"
+Jun 04 15:14:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 15:14:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:14:54 symfony [info] {sfWebDebugLogger} Configuration 42.96 ms (9)
+Jun 04 15:14:54 symfony [info] {sfWebDebugLogger} Factories 103.43 ms (1)
+Jun 04 15:14:54 symfony [info] {sfWebDebugLogger} Action "question/show" 262.92 ms (1)
+Jun 04 15:14:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 7.91 ms (4)
+Jun 04 15:14:54 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 759.52 ms (1)
+Jun 04 15:16:31 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:16:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:16:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:16:31 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:16:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:16:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:16:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:16:32 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:16:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:16:32 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "ForumUsers" on "ForumAnswer"
+Jun 04 15:16:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 15:16:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:16:32 symfony [info] {sfWebDebugLogger} Configuration 63.14 ms (9)
+Jun 04 15:16:32 symfony [info] {sfWebDebugLogger} Factories 206.80 ms (1)
+Jun 04 15:16:32 symfony [info] {sfWebDebugLogger} Action "question/show" 418.51 ms (1)
+Jun 04 15:16:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 11.21 ms (4)
+Jun 04 15:16:32 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 493.92 ms (1)
+Jun 04 15:16:42 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 04 15:16:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:16:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:16:42 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 04 15:16:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:16:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 04 15:16:42 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 04 15:16:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:16:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (1)
+Jun 04 15:16:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:16:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.name AS f__name, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_category f WHERE (f.id = ?) - (2)
+Jun 04 15:16:43 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:16:43 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:16:43 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:16:43 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:16:43 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:16:43 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:16:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:16:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:16:43 symfony [info] {sfWebDebugLogger} Configuration 40.21 ms (13)
+Jun 04 15:16:43 symfony [info] {sfWebDebugLogger} Factories 99.60 ms (1)
+Jun 04 15:16:43 symfony [info] {sfWebDebugLogger} Action "question/index" 115.35 ms (1)
+Jun 04 15:16:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 7.09 ms (6)
+Jun 04 15:16:43 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 332.09 ms (1)
+Jun 04 15:16:43 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.20 ms (1)
+Jun 04 15:16:43 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 7.58 ms (1)
+Jun 04 15:16:43 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.29 ms (1)
+Jun 04 15:16:43 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 6.69 ms (1)
+Jun 04 15:16:43 symfony [info] {sfWebResponse} Send content (44687 o)
+Jun 04 15:16:45 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:16:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:16:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:16:45 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:16:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:16:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:16:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:16:45 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:16:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:16:45 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "ForumUsers" on "ForumAnswer"
+Jun 04 15:16:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 15:16:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:16:46 symfony [info] {sfWebDebugLogger} Configuration 32.53 ms (9)
+Jun 04 15:16:46 symfony [info] {sfWebDebugLogger} Factories 131.53 ms (1)
+Jun 04 15:16:46 symfony [info] {sfWebDebugLogger} Action "question/show" 186.91 ms (1)
+Jun 04 15:16:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.79 ms (4)
+Jun 04 15:16:46 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 376.21 ms (1)
+Jun 04 15:17:47 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:17:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:17:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:17:47 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:17:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:17:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:17:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:17:47 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:17:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:17:47 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "ForumUsers" on "ForumAnswer"
+Jun 04 15:17:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 15:17:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:17:47 symfony [info] {sfWebDebugLogger} Configuration 1877.69 ms (9)
+Jun 04 15:17:47 symfony [info] {sfWebDebugLogger} Factories 1411.85 ms (1)
+Jun 04 15:17:47 symfony [info] {sfWebDebugLogger} Action "question/show" 188.21 ms (1)
+Jun 04 15:17:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.82 ms (4)
+Jun 04 15:17:47 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 472.44 ms (1)
+Jun 04 15:19:38 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:19:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:19:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:19:38 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:19:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:19:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:19:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:19:39 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:19:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:19:39 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "author_email" on "ForumAnswer"
+Jun 04 15:19:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 15:19:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:19:39 symfony [info] {sfWebDebugLogger} Configuration 32.92 ms (9)
+Jun 04 15:19:39 symfony [info] {sfWebDebugLogger} Factories 156.80 ms (1)
+Jun 04 15:19:39 symfony [info] {sfWebDebugLogger} Action "question/show" 199.07 ms (1)
+Jun 04 15:19:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.43 ms (4)
+Jun 04 15:19:39 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 416.47 ms (1)
+Jun 04 15:21:52 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:21:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:21:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:21:52 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:21:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:21:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:21:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:21:52 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:21:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:21:53 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "author_email" on "ForumAnswer"
+Jun 04 15:21:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 04 15:21:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:21:53 symfony [info] {sfWebDebugLogger} Configuration 1715.47 ms (9)
+Jun 04 15:21:53 symfony [info] {sfWebDebugLogger} Factories 1088.83 ms (1)
+Jun 04 15:21:53 symfony [info] {sfWebDebugLogger} Action "question/show" 196.35 ms (1)
+Jun 04 15:21:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.10 ms (4)
+Jun 04 15:21:53 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 559.78 ms (1)
+Jun 04 15:30:18 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:30:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:30:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:30:18 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:30:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:30:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.authoremail AS f__authoremail, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:30:19 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:30:19 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:30:19 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:30:19 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:30:19 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:30:19 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:30:19 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:30:19 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:30:19 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:30:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:30:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:30:19 symfony [info] {sfWebDebugLogger} Configuration 83.80 ms (14)
+Jun 04 15:30:19 symfony [info] {sfWebDebugLogger} Factories 108.47 ms (1)
+Jun 04 15:30:19 symfony [info] {sfWebDebugLogger} Action "question/show" 190.55 ms (1)
+Jun 04 15:30:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.68 ms (4)
+Jun 04 15:30:19 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 263.27 ms (1)
+Jun 04 15:30:19 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.42 ms (1)
+Jun 04 15:30:19 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 13.81 ms (1)
+Jun 04 15:30:19 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.40 ms (1)
+Jun 04 15:30:19 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 13.62 ms (1)
+Jun 04 15:30:19 symfony [info] {sfWebResponse} Send content (43065 o)
+Jun 04 15:49:22 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:49:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:49:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:49:22 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:49:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:49:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.authoremail AS f__authoremail, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:49:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:49:22 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:49:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:49:22 symfony [notice] {sfWebDebugLogger}  Notice at D:\Webest\forumProject\trunk\apps\frontend\modules\question\templates\questionParts\writeAnswer.php on line 21 (Undefined property: sfPHPView::$question)
+Jun 04 15:49:22 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:49:22 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:49:22 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:49:22 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:49:22 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:49:22 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:49:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:49:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:49:22 symfony [info] {sfWebDebugLogger} Configuration 22.49 ms (13)
+Jun 04 15:49:22 symfony [info] {sfWebDebugLogger} Factories 54.32 ms (1)
+Jun 04 15:49:22 symfony [info] {sfWebDebugLogger} Action "question/show" 101.22 ms (1)
+Jun 04 15:49:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.92 ms (4)
+Jun 04 15:49:22 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 104.03 ms (1)
+Jun 04 15:49:22 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.10 ms (1)
+Jun 04 15:49:22 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 3.53 ms (1)
+Jun 04 15:49:22 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.13 ms (1)
+Jun 04 15:49:22 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.74 ms (1)
+Jun 04 15:49:22 symfony [info] {sfWebResponse} Send content (50528 o)
+Jun 04 15:50:03 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:50:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:50:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:50:03 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:50:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:50:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.authoremail AS f__authoremail, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:50:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:50:03 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:50:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:50:03 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:50:03 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:50:03 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:50:03 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:50:03 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:50:03 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:50:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:50:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:50:03 symfony [info] {sfWebDebugLogger} Configuration 21.57 ms (13)
+Jun 04 15:50:03 symfony [info] {sfWebDebugLogger} Factories 51.39 ms (1)
+Jun 04 15:50:03 symfony [info] {sfWebDebugLogger} Action "question/show" 103.59 ms (1)
+Jun 04 15:50:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.86 ms (4)
+Jun 04 15:50:03 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 98.54 ms (1)
+Jun 04 15:50:03 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.11 ms (1)
+Jun 04 15:50:03 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 4.41 ms (1)
+Jun 04 15:50:03 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.10 ms (1)
+Jun 04 15:50:03 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 4.05 ms (1)
+Jun 04 15:50:03 symfony [info] {sfWebResponse} Send content (44585 o)
+Jun 04 15:51:36 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:51:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:51:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:51:36 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:51:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:51:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.authoremail AS f__authoremail, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:51:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:51:36 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:51:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:51:36 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:51:36 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:51:36 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:51:36 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:51:36 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:51:36 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:51:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:51:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:51:36 symfony [info] {sfWebDebugLogger} Configuration 20.51 ms (13)
+Jun 04 15:51:36 symfony [info] {sfWebDebugLogger} Factories 51.97 ms (1)
+Jun 04 15:51:36 symfony [info] {sfWebDebugLogger} Action "question/show" 104.17 ms (1)
+Jun 04 15:51:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.76 ms (4)
+Jun 04 15:51:36 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 98.24 ms (1)
+Jun 04 15:51:36 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.11 ms (1)
+Jun 04 15:51:36 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 3.55 ms (1)
+Jun 04 15:51:36 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.10 ms (1)
+Jun 04 15:51:36 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.58 ms (1)
+Jun 04 15:51:36 symfony [info] {sfWebResponse} Send content (44585 o)
+Jun 04 15:51:52 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:51:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:51:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:51:52 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:51:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:51:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.authoremail AS f__authoremail, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:51:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:51:52 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:51:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:51:53 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:51:53 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:51:53 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:51:53 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:51:53 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:51:53 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:51:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:51:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:51:53 symfony [info] {sfWebDebugLogger} Configuration 20.81 ms (13)
+Jun 04 15:51:53 symfony [info] {sfWebDebugLogger} Factories 53.88 ms (1)
+Jun 04 15:51:53 symfony [info] {sfWebDebugLogger} Action "question/show" 101.22 ms (1)
+Jun 04 15:51:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.76 ms (4)
+Jun 04 15:51:53 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 96.75 ms (1)
+Jun 04 15:51:53 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.11 ms (1)
+Jun 04 15:51:53 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 3.70 ms (1)
+Jun 04 15:51:53 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.10 ms (1)
+Jun 04 15:51:53 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 3.96 ms (1)
+Jun 04 15:51:53 symfony [info] {sfWebResponse} Send content (44585 o)
+Jun 04 15:52:13 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:52:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:52:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:52:13 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:52:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:52:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.authoremail AS f__authoremail, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:52:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:52:13 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:52:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:52:13 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:52:13 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:52:13 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:52:13 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:52:13 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:52:14 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:52:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:52:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:52:14 symfony [info] {sfWebDebugLogger} Configuration 19.05 ms (13)
+Jun 04 15:52:14 symfony [info] {sfWebDebugLogger} Factories 51.32 ms (1)
+Jun 04 15:52:14 symfony [info] {sfWebDebugLogger} Action "question/show" 97.74 ms (1)
+Jun 04 15:52:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.72 ms (4)
+Jun 04 15:52:14 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 95.59 ms (1)
+Jun 04 15:52:14 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.11 ms (1)
+Jun 04 15:52:14 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 3.72 ms (1)
+Jun 04 15:52:14 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.10 ms (1)
+Jun 04 15:52:14 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 4.14 ms (1)
+Jun 04 15:52:14 symfony [info] {sfWebResponse} Send content (44584 o)
+Jun 04 15:52:22 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:52:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:52:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:52:22 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:52:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:52:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.authoremail AS f__authoremail, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:52:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:52:22 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:52:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:52:22 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:52:22 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:52:22 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:52:22 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:52:22 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:52:22 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:52:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:52:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:52:22 symfony [info] {sfWebDebugLogger} Configuration 21.36 ms (13)
+Jun 04 15:52:22 symfony [info] {sfWebDebugLogger} Factories 53.14 ms (1)
+Jun 04 15:52:22 symfony [info] {sfWebDebugLogger} Action "question/show" 112.58 ms (1)
+Jun 04 15:52:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.24 ms (4)
+Jun 04 15:52:22 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 96.16 ms (1)
+Jun 04 15:52:22 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.11 ms (1)
+Jun 04 15:52:22 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 3.34 ms (1)
+Jun 04 15:52:22 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.10 ms (1)
+Jun 04 15:52:22 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 4.50 ms (1)
+Jun 04 15:52:23 symfony [info] {sfWebResponse} Send content (44584 o)
+Jun 04 15:52:33 symfony [info] {sfPatternRouting} Match route "question_show" (/question/:id) for /question/1 with parameters array (  'module' => 'question',  'action' => 'show',  'id' => '1',)
+Jun 04 15:52:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 04 15:52:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 04 15:52:33 symfony [info] {questionActions} Call "questionActions->executeShow()"
+Jun 04 15:52:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 04 15:52:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.authoremail AS f__authoremail, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f WHERE (question_id = ?) - (1)
+Jun 04 15:52:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.numviews AS f__numviews, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f WHERE (f.id = ?) LIMIT 1 - (1)
+Jun 04 15:52:33 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/question/templates/showSuccess.php"
+Jun 04 15:52:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f WHERE (f.id = ?) - (1)
+Jun 04 15:52:33 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:52:34 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\trunk\apps\frontend\templates/layout.php"
+Jun 04 15:52:34 symfony [info] {main} Call "layout->executeHeader()"
+Jun 04 15:52:34 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_header.php"
+Jun 04 15:52:34 symfony [info] {main} Call "layout->executeFooter()"
+Jun 04 15:52:34 symfony [info] {sfPartialView} Render "D:\Webest\forumProject\trunk\apps\frontend\modules/layout/templates/_footer.php"
+Jun 04 15:52:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 04 15:52:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 04 15:52:34 symfony [info] {sfWebDebugLogger} Configuration 802.15 ms (13)
+Jun 04 15:52:34 symfony [info] {sfWebDebugLogger} Factories 527.81 ms (1)
+Jun 04 15:52:34 symfony [info] {sfWebDebugLogger} Action "question/show" 106.30 ms (1)
+Jun 04 15:52:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.53 ms (4)
+Jun 04 15:52:34 symfony [info] {sfWebDebugLogger} View "Success" for "question/show" 155.45 ms (1)
+Jun 04 15:52:34 symfony [info] {sfWebDebugLogger} Component "layout/header" 0.11 ms (1)
+Jun 04 15:52:34 symfony [info] {sfWebDebugLogger} Partial "layout/_header" 3.31 ms (1)
+Jun 04 15:52:34 symfony [info] {sfWebDebugLogger} Component "layout/footer" 0.11 ms (1)
+Jun 04 15:52:34 symfony [info] {sfWebDebugLogger} Partial "layout/_footer" 4.37 ms (1)
+Jun 04 15:52:34 symfony [info] {sfWebResponse} Send content (44589 o)

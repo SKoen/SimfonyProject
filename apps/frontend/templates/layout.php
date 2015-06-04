@@ -9,6 +9,11 @@
     <?php include_javascripts() ?>
   </head>
   <body>
+
+    <?php include_component('layout','header');?>
+
     <?php echo $sf_content ?>
+
+    <?php include_component('layout','footer');?>
   </body>
 </html>

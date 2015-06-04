@@ -12,5 +12,12 @@
  */
 class ForumQuestions extends BaseForumQuestions
 {
+    public function getCategoryName(){
+        return $this->ForumCategory->name;
+    }
+    public function getAuthorName(){
+        return $this->ForumUsers->username;
+    }
+
 
 }

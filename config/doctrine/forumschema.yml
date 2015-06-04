@@ -5,6 +5,7 @@ ForumQuestions:
     author_Id: { type: integer, notnull: true }
     category_Id: { type: integer, notnull: true }
     title: { type: string(50), notnull: true}
+    numViews: { type: integer, notnull: true, default: 0}
   relations:
     ForumCategory: { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: ForumQuestions }
     ForumUsers: { onDelete: CASCADE, local: author_Id, foreign: id, foreignAlias: ForumQuestions }
@@ -22,7 +23,8 @@ ForumAnswer:
   actAs: { Timestampable: ~ }
   columns:
     text: { type: string(1000), notnull: true}
-    authorName: { type: integer, notnull: true }
+    authorName: { type: string(50), notnull: true }
+    authorEmail: { type: string(50), notnull: true }
     question_Id: { type: integer, notnull: true }
   relations:
     ForumQuestions: { onDelete: CASCADE, local: question_id, foreign: id, foreignAlias: ForumAnswer }

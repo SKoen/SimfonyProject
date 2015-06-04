@@ -14,12 +14,16 @@ class questionActions extends sfActions
   {
     $this->forum_questionss = Doctrine_Core::getTable('ForumQuestions')
       ->createQuery('a')
-      ->where('title = ?','dd')
       ->execute();
   }
 
   public function executeShow(sfWebRequest $request)
   {
+  $this->forum_answers = Doctrine_Core::getTable('ForumAnswer')
+      ->createQuery('a')
+      ->where('question_id=?',$request->getParameter('id'))
+      ->execute();
+
     $this->forum_questions = Doctrine_Core::getTable('ForumQuestions')->find(array($request->getParameter('id')));
     $this->forward404Unless($this->forum_questions);
   }
