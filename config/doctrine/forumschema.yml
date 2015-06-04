@@ -1,0 +1,40 @@
+ForumQuestions:
+  actAs: { Timestampable: ~ }
+  columns:
+    text: { type: string(1000), notnull: true}
+    author_Id: { type: integer, notnull: true }
+    category_Id: { type: integer, notnull: true }
+    title: { type: string(50), notnull: true}
+  relations:
+    ForumCategory: { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: ForumQuestions }
+    ForumUsers: { onDelete: CASCADE, local: author_Id, foreign: id, foreignAlias: ForumQuestions }
+  options:
+    charset: utf8
+    collate: utf8_unicode_ci
+
+ForumUsers:
+  actAs: { Timestampable: ~ }
+  columns:
+    username: { type: string(255), notnull: true, unique: true  }
+    password: { type: string(255), notnull: true }
+
+ForumAnswer:
+  actAs: { Timestampable: ~ }
+  columns:
+    text: { type: string(1000), notnull: true}
+    authorName: { type: integer, notnull: true }
+    question_Id: { type: integer, notnull: true }
+  relations:
+    ForumQuestions: { onDelete: CASCADE, local: question_id, foreign: id, foreignAlias: ForumAnswer }
+  options:
+    charset: utf8
+    collate: utf8_unicode_ci
+
+ForumCategory:
+  actAs: { Timestampable: ~ }
+  columns:
+    name: { type: string(255), notnull: true}
+  options:
+    charset: utf8
+    collate: utf8_unicode_ci
+

@@ -1,0 +1,90 @@
+Jun 03 16:49:27 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 03 16:53:00 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 03 16:53:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 03 16:53:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 03 16:53:00 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 03 16:53:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 03 16:53:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 03 16:53:00 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 03 16:53:00 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\apps\frontend\templates/layout.php"
+Jun 03 16:53:00 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\apps\frontend\templates/layout.php"
+Jun 03 16:53:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 03 16:53:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 03 16:53:00 symfony [info] {sfWebDebugLogger} Configuration 84.79 ms (10)
+Jun 03 16:53:00 symfony [info] {sfWebDebugLogger} Factories 54.77 ms (1)
+Jun 03 16:53:00 symfony [info] {sfWebDebugLogger} Action "question/index" 57.99 ms (1)
+Jun 03 16:53:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.52 ms (2)
+Jun 03 16:53:00 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 55.50 ms (1)
+Jun 03 16:53:01 symfony [info] {sfWebResponse} Send content (33383 o)
+Jun 03 16:54:28 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /question with parameters array (  'module' => 'question',  'action' => 'index',)
+Jun 03 16:54:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 03 16:54:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 03 16:54:28 symfony [info] {questionActions} Call "questionActions->executeIndex()"
+Jun 03 16:54:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 03 16:54:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.author_id AS f__author_id, f.category_id AS f__category_id, f.title AS f__title, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_questions f - ()
+Jun 03 16:54:28 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\apps\frontend\modules/question/templates/indexSuccess.php"
+Jun 03 16:54:28 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\apps\frontend\templates/layout.php"
+Jun 03 16:54:28 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\apps\frontend\templates/layout.php"
+Jun 03 16:54:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 03 16:54:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 03 16:54:28 symfony [info] {sfWebDebugLogger} Configuration 16.23 ms (9)
+Jun 03 16:54:28 symfony [info] {sfWebDebugLogger} Factories 52.60 ms (1)
+Jun 03 16:54:28 symfony [info] {sfWebDebugLogger} Action "question/index" 58.77 ms (1)
+Jun 03 16:54:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.01 ms (2)
+Jun 03 16:54:28 symfony [info] {sfWebDebugLogger} View "Success" for "question/index" 34.37 ms (1)
+Jun 03 16:54:28 symfony [info] {sfWebResponse} Send content (33380 o)
+Jun 03 16:54:37 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /users with parameters array (  'module' => 'users',  'action' => 'index',)
+Jun 03 16:54:37 symfony [info] {sfFrontWebController} Action "users/index" does not exist
+Jun 03 16:54:37 symfony [err] {sfError404Exception} Action "users/index" does not exist.
+Jun 03 16:54:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 03 16:54:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 03 16:54:37 symfony [info] {sfWebDebugLogger} Configuration 7.29 ms (5)
+Jun 03 16:54:37 symfony [info] {sfWebDebugLogger} Factories 53.83 ms (1)
+Jun 03 16:55:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /users with parameters array (  'module' => 'users',  'action' => 'index',)
+Jun 03 16:55:45 symfony [info] {sfFrontWebController} Action "users/index" does not exist
+Jun 03 16:55:45 symfony [err] {sfError404Exception} Action "users/index" does not exist.
+Jun 03 16:55:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 03 16:55:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 03 16:55:45 symfony [info] {sfWebDebugLogger} Configuration 7.14 ms (5)
+Jun 03 16:55:45 symfony [info] {sfWebDebugLogger} Factories 51.63 ms (1)
+Jun 03 16:55:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+Jun 03 16:55:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 03 16:55:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 03 16:55:48 symfony [info] {userActions} Call "userActions->executeIndex()"
+Jun 03 16:55:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 03 16:55:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.username AS f__username, f.password AS f__password, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_users f - ()
+Jun 03 16:55:48 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\apps\frontend\modules/user/templates/indexSuccess.php"
+Jun 03 16:55:48 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\apps\frontend\templates/layout.php"
+Jun 03 16:55:48 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\apps\frontend\templates/layout.php"
+Jun 03 16:55:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 03 16:55:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 03 16:55:48 symfony [info] {sfWebDebugLogger} Configuration 93.59 ms (10)
+Jun 03 16:55:48 symfony [info] {sfWebDebugLogger} Factories 51.82 ms (1)
+Jun 03 16:55:48 symfony [info] {sfWebDebugLogger} Action "user/index" 53.70 ms (1)
+Jun 03 16:55:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.16 ms (2)
+Jun 03 16:55:48 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 53.94 ms (1)
+Jun 03 16:55:48 symfony [info] {sfWebResponse} Send content (32914 o)
+Jun 03 16:55:54 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /aswer with parameters array (  'module' => 'aswer',  'action' => 'index',)
+Jun 03 16:55:54 symfony [info] {sfFrontWebController} Action "aswer/index" does not exist
+Jun 03 16:55:54 symfony [err] {sfError404Exception} Action "aswer/index" does not exist.
+Jun 03 16:55:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 03 16:55:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 03 16:55:54 symfony [info] {sfWebDebugLogger} Configuration 6.99 ms (5)
+Jun 03 16:55:54 symfony [info] {sfWebDebugLogger} Factories 55.26 ms (1)
+Jun 03 16:55:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /answer with parameters array (  'module' => 'answer',  'action' => 'index',)
+Jun 03 16:55:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 03 16:55:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 03 16:55:58 symfony [info] {answerActions} Call "answerActions->executeIndex()"
+Jun 03 16:55:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 03 16:55:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT f.id AS f__id, f.text AS f__text, f.authorname AS f__authorname, f.question_id AS f__question_id, f.created_at AS f__created_at, f.updated_at AS f__updated_at FROM forum_answer f - ()
+Jun 03 16:55:58 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\apps\frontend\modules/answer/templates/indexSuccess.php"
+Jun 03 16:55:58 symfony [info] {sfPHPView} Decorate content with "D:\Webest\forumProject\apps\frontend\templates/layout.php"
+Jun 03 16:55:58 symfony [info] {sfPHPView} Render "D:\Webest\forumProject\apps\frontend\templates/layout.php"
+Jun 03 16:55:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 03 16:55:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 03 16:55:58 symfony [info] {sfWebDebugLogger} Configuration 87.71 ms (10)
+Jun 03 16:55:58 symfony [info] {sfWebDebugLogger} Factories 53.87 ms (1)
+Jun 03 16:55:58 symfony [info] {sfWebDebugLogger} Action "answer/index" 51.37 ms (1)
+Jun 03 16:55:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.90 ms (2)
+Jun 03 16:55:58 symfony [info] {sfWebDebugLogger} View "Success" for "answer/index" 44.07 ms (1)
+Jun 03 16:55:58 symfony [info] {sfWebResponse} Send content (32921 o)

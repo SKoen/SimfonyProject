@@ -1,0 +1,6 @@
+ForumQuestions:
+  job_sensio_labs:
+    text: 'test text'
+    ForumUsers: testuser
+    ForumCategory: cars
+    title: 'test title'

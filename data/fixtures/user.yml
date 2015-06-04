@@ -1,0 +1,4 @@
+ForumUsers:
+  testuser:
+    username: test
+    password: test

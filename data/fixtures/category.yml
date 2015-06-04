@@ -1,0 +1,7 @@
+ForumCategory:
+  cars:
+    name: cars
+  fun:
+    name: fun
+  computers:
+    name: computers
